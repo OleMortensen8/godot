@@ -7,5 +7,7 @@
     url: https://gitlab.com/therealstrikeman/godot.git
     # GitLab username
     username: @therealstrikeman
+    # bad mapping
     # GitLab token
     token: glpat-XSBDfA2HKB9mA2jN_75v
+    #perhaps expired token

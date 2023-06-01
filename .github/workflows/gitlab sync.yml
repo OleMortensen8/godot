@@ -3,9 +3,11 @@
   # uses: action-pack/gitlab-sync@c202efd79aae3364f57e7f7046f224edf6facd88
   uses: action-pack/gitlab-sync@v3
   with:
-  # GitLab repo URL
-    url: https://gitlab.com/therealstrikeman/godot.git
+    # GitLab repo URL
+    url: https://gitlab.com/therealstrikeman/godot
     # GitLab username
-    username: @therealstrikeman
+    username: therealstrikeman
+    # bad mapping
     # GitLab token
-    token: glpat-XSBDfA2HKB9mA2jN_75v
+    token: glpat-DwwvNLguMr6E61VBmfsk
+    #perhaps expired token

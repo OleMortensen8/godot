@@ -1,6 +1,7 @@
 [gd_scene load_steps=36 format=3 uid="uid://ci5rdqot5fvab"]
 
 [ext_resource type="Script" path="res://CharacterBodyD.gd" id="1_v0ftn"]
+[ext_resource type="Material" uid="uid://bdike8wpetg1b" path="res://addons/character-controller/example/main/materials/bricks.tres" id="2_024es"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_4c8fw"]
 sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
@@ -300,8 +301,6 @@ _data = {
 
 [sub_resource type="Skin" id="Skin_cs5at"]
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_0dsmi"]
-
 [sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_0os11"]
 data = PackedVector3Array(1, 0, 1, -1, 0, 1, 1, 0, -1, -1, 0, 1, -1, 0, -1, 1, 0, -1)
 
@@ -327,7 +326,7 @@ shape = SubResource("CapsuleShape3D_7rmtw")
 mesh = SubResource("CapsuleMesh_l2vx2")
 
 [node name="camera" type="Camera3D" parent="CharacterBody3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0799685, 0.379263, -0.362935)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0799685, 0.379263, 0.0760055)
 keep_aspect = 0
 doppler_tracking = 1
 fov = 70.0
@@ -572,7 +571,7 @@ libraries = {
 transform = Transform3D(38.4473, 0, 0, 0, 38.4473, 0, 0, 0, 38.4473, 0, 0, 0)
 mesh = SubResource("PlaneMesh_ff7ul")
 skin = SubResource("Skin_cs5at")
-surface_material_override/0 = SubResource("StandardMaterial3D_0dsmi")
+surface_material_override/0 = ExtResource("2_024es")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="MeshInstance3D"]
 

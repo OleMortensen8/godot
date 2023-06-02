@@ -15,8 +15,4 @@ jobs:
         url: ${{ secrets.GITLAB_URL }}
         username: ${{ secrets.GITLAB_USERNAME }}
         # Personal access token from gitlab.com 
-<<<<<<< HEAD
         token: ${{ secrets.GITLAB_TOKEN }}
-=======
-        token: ${{ secrets.GITLAB_TOKEN }}
->>>>>>> d1b83019bdd4bec379aab81a371eeb726d9a10a4

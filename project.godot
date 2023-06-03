@@ -10,24 +10,11 @@ config_version=5
 
 [application]
 
-<<<<<<< Updated upstream
 config/name="Godot"
-<<<<<<< Updated upstream
 run/main_scene="res://player.tscn"
-config/features=PackedStringArray("4.1", "Forward Plus")
-=======
-config/name="PROJECT  HORDE"
-config/tags=PackedStringArray("4.1")
+
 run/main_scene="res://game.tscn"
-config/features=PackedStringArray("4.2", "Forward Plus")
-boot_splash/bg_color=Color(0.243137, 0.215686, 0.207843, 1)
-boot_splash/image="res://Untitled.svg"
-boot_splash/fullsize=false
-boot_splash/use_filter=false
->>>>>>> Stashed changes
-=======
-config/features=PackedStringArray("4.2", "Forward Plus")
->>>>>>> Stashed changes
+config/features=PackedStringArray("4.1", "Forward Plus")
 config/icon="res://icon.svg"
 config/windows_native_icon="res://Nyt Projekt.svg"
 
@@ -37,7 +24,6 @@ window/size/mode=3
 
 [filesystem]
 
-<<<<<<< Updated upstream
 project/assembly_name="Godot"
 
 [editor_plugins]
@@ -121,6 +107,3 @@ Fire={
 "events": [Object(InputEventMouseButton,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"button_mask":0,"position":Vector2(0, 0),"global_position":Vector2(0, 0),"factor":1.0,"button_index":1,"canceled":false,"pressed":false,"double_click":false,"script":null)
 ]
 }
-=======
-import/blender/enabled=false
->>>>>>> Stashed changes

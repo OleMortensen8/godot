@@ -12,12 +12,14 @@ func _ready():
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
 
 func _physics_process(delta):
+
 	velocity.y += -gravity * delta
 	var input = Input.get_vector("Move_left", "Move_right", "Move_forward", "Move_backward")
 	var movement_dir = transform.basis * Vector3(input.x, 0, input.y)
 	velocity.x = movement_dir.x * speed
 	velocity.z = movement_dir.z * speed
 
+	
 	move_and_slide()
 	if is_on_floor() and Input.is_action_just_pressed("jump"):
 		velocity.y = jump_speed

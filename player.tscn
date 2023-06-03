@@ -2,7 +2,10 @@
 
 
 
+
 [ext_resource type="Script" path="res://CharacterBodyD.gd" id="1_0nvuk"]
+
+
 
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_4c8fw"]
@@ -324,6 +327,7 @@ collision_layer = 35
 collision_mask = 7
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 script = ExtResource("1_0nvuk")
 =======
 script = ExtResource("1_n64em")
@@ -331,6 +335,9 @@ script = ExtResource("1_n64em")
 =======
 script = ExtResource("1_n88vw")
 >>>>>>> e74bfce (Update player.tscn)
+=======
+script = ExtResource("1_n88vw")
+>>>>>>> d7f36c6 (change witch i hope works)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="CharacterBody3D"]
 shape = SubResource("CapsuleShape3D_7rmtw")

@@ -1,7 +1,7 @@
 [gd_scene load_steps=36 format=3 uid="uid://ci5rdqot5fvab"]
 
-[ext_resource type="Script" path="res://CharacterBodyD.gd" id="1_v0ftn"]
-[ext_resource type="Material" uid="uid://bdike8wpetg1b" path="res://addons/character-controller/example/main/materials/bricks.tres" id="2_024es"]
+[ext_resource type="Script" path="res://CharacterBodyD.gd" id="1_45ps4"]
+[ext_resource type="Material" uid="uid://bdike8wpetg1b" path="res://addons/character-controller/example/main/materials/bricks.tres" id="2_86vk5"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_4c8fw"]
 sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
@@ -276,20 +276,19 @@ shadow_mesh = SubResource("ArrayMesh_s135d")
 [sub_resource type="Animation" id="Animation_tt37l"]
 resource_name = "gun_fire"
 length = 0.5
-loop_mode = 1
 tracks/0/type = "rotation_3d"
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/path = NodePath("1911/Armature/Skeleton3D/Cube004/Cube004")
 tracks/0/interp = 1
-tracks/0/loop_wrap = true
+tracks/0/loop_wrap = false
 tracks/0/keys = PackedFloat32Array(0, 1, 0, -2.11758e-21, -3.05313e-16, 1, 0.2, 1, -0.528327, 1.04609e-15, -2.09219e-15, 0.849041, 0.4, 1, -0.0894418, -1.0903e-16, -3.12113e-15, 0.995992)
 tracks/1/type = "position_3d"
 tracks/1/imported = false
 tracks/1/enabled = true
 tracks/1/path = NodePath("1911/Armature/Skeleton3D/Cube002/Cube002")
 tracks/1/interp = 1
-tracks/1/loop_wrap = true
+tracks/1/loop_wrap = false
 tracks/1/keys = PackedFloat32Array(0, 1, 0, -2.84217e-14, -0.173499, 0.2, 1, 5.68434e-14, -2.84217e-14, 1.44655, 0.2001, 1, 5.68434e-14, -2.84217e-14, 1.44655, 0.4, 1, 5.68434e-14, -8.52651e-14, -0.180285)
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_cd58d"]
@@ -317,7 +316,7 @@ shadow_enabled = true
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0144406, 1.12455, 0.0538783)
 collision_layer = 35
 collision_mask = 7
-script = ExtResource("1_v0ftn")
+script = ExtResource("1_45ps4")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="CharacterBody3D"]
 shape = SubResource("CapsuleShape3D_7rmtw")
@@ -504,7 +503,7 @@ bone_name = "Cube.002"
 bone_idx = 9
 
 [node name="Cube002" type="MeshInstance3D" parent="CharacterBody3D/camera/SubViewportContainer/SubViewport/gun/1911/Armature/Skeleton3D/Cube002"]
-transform = Transform3D(1, -8.81517e-14, 0, 0, 1, 0, 0, 0, 1, 0, -2.84217e-14, -0.173499)
+transform = Transform3D(1, -8.81517e-14, 0, 0, 1, 0, 0, 0, 1, 5.68434e-14, -8.52651e-14, -0.180285)
 layers = 2
 mesh = SubResource("ArrayMesh_mapyo")
 skeleton = NodePath("")
@@ -515,7 +514,7 @@ bone_name = "Cube.004"
 bone_idx = 12
 
 [node name="Cube004" type="MeshInstance3D" parent="CharacterBody3D/camera/SubViewportContainer/SubViewport/gun/1911/Armature/Skeleton3D/Cube004"]
-transform = Transform3D(1, 6.10626e-16, -4.23516e-21, -6.10626e-16, 1, 1.29305e-36, 4.23516e-21, 1.29305e-36, 1, 0.0248932, -0.533807, -0.404565)
+transform = Transform3D(1, 6.23675e-15, 3.41133e-16, -6.19774e-15, 0.984, 0.178167, 7.75505e-16, -0.178167, 0.984, 0.0248932, -0.533807, -0.404565)
 layers = 2
 mesh = SubResource("ArrayMesh_xghld")
 skeleton = NodePath("")
@@ -571,7 +570,7 @@ libraries = {
 transform = Transform3D(38.4473, 0, 0, 0, 38.4473, 0, 0, 0, 38.4473, 0, 0, 0)
 mesh = SubResource("PlaneMesh_ff7ul")
 skin = SubResource("Skin_cs5at")
-surface_material_override/0 = ExtResource("2_024es")
+surface_material_override/0 = ExtResource("2_86vk5")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="MeshInstance3D"]
 

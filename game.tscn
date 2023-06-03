@@ -33,6 +33,7 @@ normal_enabled = true
 normal_texture = ExtResource("3_j3ugu")
 
 [node name="game" type="Node3D"]
+
 script = ExtResource("1_m2o23")
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]

@@ -10,12 +10,14 @@ config_version=5
 
 [application]
 
-<<<<<<< Updated upstream
+
 config/name="Godot"
-<<<<<<< Updated upstream
-run/main_scene="res://player.tscn"
-config/features=PackedStringArray("4.1", "Forward Plus")
-=======
+
+
+
+run/main_scene="res://game.tscn"
+
+
 config/name="PROJECT  HORDE"
 config/tags=PackedStringArray("4.1")
 run/main_scene="res://game.tscn"

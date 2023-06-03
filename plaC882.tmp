@@ -1,12 +1,6 @@
 [gd_scene load_steps=36 format=3 uid="uid://ci5rdqot5fvab"]
 
-
-
-
-[ext_resource type="Script" path="res://CharacterBodyD.gd" id="1_0nvuk"]
-
-
-
+[ext_resource type="Script" path="res://CharacterBodyD.gd" id="1_n88vw"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_4c8fw"]
 sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
@@ -325,19 +319,7 @@ shadow_enabled = true
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0144406, 1.12455, 0.0538783)
 collision_layer = 35
 collision_mask = 7
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-script = ExtResource("1_0nvuk")
-=======
-script = ExtResource("1_n64em")
->>>>>>> bb23a6d (new update)
-=======
 script = ExtResource("1_n88vw")
->>>>>>> e74bfce (Update player.tscn)
-=======
-script = ExtResource("1_n88vw")
->>>>>>> d7f36c6 (change witch i hope works)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="CharacterBody3D"]
 shape = SubResource("CapsuleShape3D_7rmtw")

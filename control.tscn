@@ -1,17 +1,11 @@
 [gd_scene load_steps=6 format=3 uid="uid://cebdxvytshix7"]
 
-<<<<<<< HEAD
+
+
 [ext_resource type="Script" path="res://Control.gd" id="1_4s7hj"]
 [ext_resource type="Theme" uid="uid://bceuqhsf73fkh" path="res://new_theme.tres" id="2_44s4q"]
-=======
-<<<<<<< Updated upstream
-[ext_resource type="Script" path="res://Control.gd" id="1_44kob"]
-[ext_resource type="Theme" uid="uid://bceuqhsf73fkh" path="res://new_theme.tres" id="2_w5me6"]
-=======
-[ext_resource type="Script" path="res://Control.gd" id="1_t6u6h"]
-[ext_resource type="Theme" uid="uid://bceuqhsf73fkh" path="res://new_theme.tres" id="2_djfb6"]
->>>>>>> Stashed changes
->>>>>>> bb23a6d (new update)
+
+
 
 [sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_e5cla"]
 blend_mode = 2
@@ -31,13 +25,7 @@ grow_horizontal = 2
 grow_vertical = 2
 <<<<<<< HEAD
 script = ExtResource("1_4s7hj")
-=======
-<<<<<<< Updated upstream
-script = ExtResource("1_44kob")
-=======
-script = ExtResource("1_t6u6h")
->>>>>>> Stashed changes
->>>>>>> bb23a6d (new update)
+
 
 [node name="MarginContainer" type="MarginContainer" parent="."]
 light_mask = 4
@@ -65,6 +53,7 @@ light_mask = 4
 visibility_layer = 4
 layout_mode = 2
 <<<<<<< HEAD
+<<<<<<< HEAD
 theme = ExtResource("2_44s4q")
 =======
 <<<<<<< Updated upstream
@@ -73,6 +62,9 @@ theme = ExtResource("2_w5me6")
 theme = ExtResource("2_djfb6")
 >>>>>>> Stashed changes
 >>>>>>> bb23a6d (new update)
+=======
+theme = ExtResource("2_rbep8")
+>>>>>>> d7f36c6 (change witch i hope works)
 text = "Resume
 "
 

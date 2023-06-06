@@ -1,7 +1,7 @@
 [gd_scene load_steps=36 format=3 uid="uid://ci5rdqot5fvab"]
 
-[ext_resource type="Script" path="res://CharacterBodyD.gd" id="1_45ps4"]
-[ext_resource type="Material" uid="uid://bdike8wpetg1b" path="res://addons/character-controller/example/main/materials/bricks.tres" id="2_86vk5"]
+[ext_resource type="Script" path="res://CharacterBodyD.gd" id="1_03soa"]
+[ext_resource type="Material" uid="uid://bdike8wpetg1b" path="res://addons/character-controller/example/main/materials/bricks.tres" id="2_d6nfq"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_4c8fw"]
 sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
@@ -316,7 +316,7 @@ shadow_enabled = true
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0144406, 1.12455, 0.0538783)
 collision_layer = 35
 collision_mask = 7
-script = ExtResource("1_45ps4")
+script = ExtResource("1_03soa")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="CharacterBody3D"]
 shape = SubResource("CapsuleShape3D_7rmtw")
@@ -570,7 +570,7 @@ libraries = {
 transform = Transform3D(38.4473, 0, 0, 0, 38.4473, 0, 0, 0, 38.4473, 0, 0, 0)
 mesh = SubResource("PlaneMesh_ff7ul")
 skin = SubResource("Skin_cs5at")
-surface_material_override/0 = ExtResource("2_86vk5")
+surface_material_override/0 = ExtResource("2_d6nfq")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="MeshInstance3D"]
 

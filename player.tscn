@@ -569,7 +569,7 @@ libraries = {
 transform = Transform3D(38.4473, 0, 0, 0, 38.4473, 0, 0, 0, 38.4473, 0, 0, 0)
 mesh = SubResource("PlaneMesh_ff7ul")
 skin = SubResource("Skin_cs5at")
-surface_material_override/0 = ExtResource("2_86vk5")
+surface_material_override/0 = ExtResource("2_d6nfq")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="MeshInstance3D"]
 

@@ -22,13 +22,15 @@ grow_vertical = 2
 script = ExtResource("1_4s7hj")
 
 [node name="MarginContainer" type="MarginContainer" parent="."]
+light_mask = 4
+visibility_layer = 4
 layout_mode = 1
 anchors_preset = -1
 anchor_right = 0.992
 anchor_bottom = 0.997
-offset_left = 336.0
-offset_right = -286.0
-offset_bottom = -0.0560303
+offset_left = 532.0
+offset_right = -284.784
+offset_bottom = -0.0559692
 grow_horizontal = 0
 grow_vertical = 0
 scale = Vector2(1.008, 1.003)
@@ -41,18 +43,24 @@ size_flags_stretch_ratio = 0.0
 alignment = 1
 
 [node name="resumeButton" type="Button" parent="MarginContainer/VBoxContainer"]
+light_mask = 4
+visibility_layer = 4
 layout_mode = 2
 theme = ExtResource("2_44s4q")
 text = "Resume
 "
 
 [node name="optionsButton" type="Button" parent="MarginContainer/VBoxContainer"]
+light_mask = 4
+visibility_layer = 4
 layout_mode = 2
 text = "options
 "
 icon = SubResource("ViewportTexture_dntiy")
 
 [node name="quitButton" type="Button" parent="MarginContainer/VBoxContainer"]
+light_mask = 4
+visibility_layer = 4
 custom_minimum_size = Vector2(0, 0.815)
 layout_direction = 2
 layout_mode = 2

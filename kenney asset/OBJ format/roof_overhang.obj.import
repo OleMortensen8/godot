@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://ux7suymal28"
+path="res://.godot/imported/roof_overhang.obj-f9581b5846c8c8f34078309a192761e2.mesh"
+
+[deps]
+
+files=["res://.godot/imported/roof_overhang.obj-f9581b5846c8c8f34078309a192761e2.mesh"]
+
+source_file="res://kenney asset/OBJ format/roof_overhang.obj"
+dest_files=["res://.godot/imported/roof_overhang.obj-f9581b5846c8c8f34078309a192761e2.mesh", "res://.godot/imported/roof_overhang.obj-f9581b5846c8c8f34078309a192761e2.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

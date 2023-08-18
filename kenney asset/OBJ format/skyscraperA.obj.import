@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bldrt8uittdwc"
+path="res://.godot/imported/skyscraperA.obj-46448ff0a12872dc9b2e2d3db1bbc143.mesh"
+
+[deps]
+
+files=["res://.godot/imported/skyscraperA.obj-46448ff0a12872dc9b2e2d3db1bbc143.mesh"]
+
+source_file="res://kenney asset/OBJ format/skyscraperA.obj"
+dest_files=["res://.godot/imported/skyscraperA.obj-46448ff0a12872dc9b2e2d3db1bbc143.mesh", "res://.godot/imported/skyscraperA.obj-46448ff0a12872dc9b2e2d3db1bbc143.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

@@ -10,7 +10,7 @@ config_version=5
 
 [application]
 
-<<<<<<< HEAD
+
 
 config/name="Godot"
 
@@ -22,8 +22,3 @@ run/main_scene="res://game.tscn"
 config/name="PROJECT  HORDE"
 config/tags=PackedStringArray("4.1")
 run/main_scene="res://game.tscn"
-=======
-config/name="Godot"
->>>>>>> 1d979cb (restart project)
-config/features=PackedStringArray("4.2", "Forward Plus")
-config/icon="res://icon.svg"

@@ -23,8 +23,9 @@ config/windows_native_icon="res://Nyt Projekt.svg"
 
 window/size/mode=3
 
-[dotnet]
+[filesystem]
 
+<<<<<<< Updated upstream
 project/assembly_name="Godot"
 
 [filesystem]

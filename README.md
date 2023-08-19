@@ -5,6 +5,7 @@ godot (bad name, subject to change) is a game project being developed using the 
 
 [Provide a brief, interesting description of the game. What kind of game is it? What's the story or goal of the game? Any unique mechanics or features?]
 
+
 ## Getting Started
 
 ### Prerequisites

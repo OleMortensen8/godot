@@ -1,12 +1,10 @@
 [gd_scene load_steps=13 format=3 uid="uid://05sperpcw3oe"]
 
-<<<<<<< Updated upstream
-[ext_resource type="Script" path="res://game.gd" id="1_eb058"]
-=======
-[ext_resource type="Texture2D" uid="uid://cq1n5jxeuib8s" path="res://beige_wall_001_diff_2k.jpg" id="2_7i7xt"]
-[ext_resource type="Texture2D" uid="uid://dq5g24hwf2oh3" path="res://beige_wall_001_nor_gl_2k.jpg" id="3_j3ugu"]
-[ext_resource type="Texture2D" uid="uid://mbtifmol78u1" path="res://beige_wall_001_rough_2k.jpg" id="4_ardoo"]
->>>>>>> Stashed changes
+
+[ext_resource type="Script" path="res://game.gd" id="1_m2o23"]
+
+
+
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_vncer"]
 sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
@@ -39,10 +37,14 @@ normal_enabled = true
 normal_texture = ExtResource("3_j3ugu")
 
 [node name="game" type="Node3D"]
-<<<<<<< Updated upstream
-script = ExtResource("1_eb058")
+
+script = ExtResource("1_m2o23")
 =======
->>>>>>> Stashed changes
+
+
+=======
+
+
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_jaxrf")

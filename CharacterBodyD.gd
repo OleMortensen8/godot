@@ -1,5 +1,7 @@
 extends CharacterBody3D
 
+
+@onready var gun = $hkk
 @onready var camera = $camera
 var gravity = ProjectSettings.get_setting("physics/3d/default_gravity")
 var speed = 5
@@ -25,3 +27,8 @@ func _input(event):
 		rotate_y(-event.relative.x * mouse_sensitivity)
 		camera.rotate_x(-event.relative.y * mouse_sensitivity)
 		camera.rotation.x = clampf(camera.rotation.x, -deg_to_rad(70), deg_to_rad(70))
+		## this is to quit the game 
+	
+		
+	
+	

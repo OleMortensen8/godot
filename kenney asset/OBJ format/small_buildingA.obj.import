@@ -1,0 +1,21 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bi6dhj31kgu74"
+path="res://.godot/imported/small_buildingA.obj-8b58c6a063cf42c63e8fb6823471e37e.mesh"
+
+[deps]
+
+files=["res://.godot/imported/small_buildingA.obj-8b58c6a063cf42c63e8fb6823471e37e.mesh"]
+
+source_file="res://kenney asset/OBJ format/small_buildingA.obj"
+dest_files=["res://.godot/imported/small_buildingA.obj-8b58c6a063cf42c63e8fb6823471e37e.mesh", "res://.godot/imported/small_buildingA.obj-8b58c6a063cf42c63e8fb6823471e37e.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true

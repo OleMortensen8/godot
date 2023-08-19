@@ -12,8 +12,12 @@ config_version=5
 
 <<<<<<< Updated upstream
 config/name="Godot"
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 run/main_scene="res://player.tscn"
+=======
+run/main_scene="res://game.tscn"
+>>>>>>> movement-fix-and-animations
 config/features=PackedStringArray("4.1", "Forward Plus")
 =======
 config/name="PROJECT  HORDE"

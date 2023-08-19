@@ -1,5 +1,9 @@
 [gd_scene load_steps=13 format=3 uid="uid://05sperpcw3oe"]
 
+<<<<<<< HEAD
+=======
+[ext_resource type="Script" path="res://game.gd" id="1_hymnt"]
+>>>>>>> movement-fix-and-animations
 
 [ext_resource type="Script" path="res://game.gd" id="1_m2o23"]
 
@@ -37,6 +41,7 @@ normal_enabled = true
 normal_texture = ExtResource("3_j3ugu")
 
 [node name="game" type="Node3D"]
+<<<<<<< HEAD
 
 script = ExtResource("1_m2o23")
 =======
@@ -45,6 +50,9 @@ script = ExtResource("1_m2o23")
 =======
 
 
+=======
+script = ExtResource("1_hymnt")
+>>>>>>> movement-fix-and-animations
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_jaxrf")

@@ -42,14 +42,6 @@ project/assembly_name="Godot"
 
 player_path="*res://player.tscn"
 
-[dotnet]
-
-project/assembly_name="Godot"
-
-[editor_plugins]
-
-enabled=PackedStringArray()
-
 [input]
 
 left={

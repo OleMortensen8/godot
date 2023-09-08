@@ -13,14 +13,14 @@
 
 name: Codacy Security Scan
 
-on:
+on: main
   push:
     branches: [ "main" ]
   pull_request:
-    branches: [ "main" ] # The branches below must be a subset of the branches above
+    # The branches below must be a subset of the branches above
+    branches: [ "main" ]
   schedule:
     - cron: '43 9 * * 6'
-
 
 permissions:
   contents: read

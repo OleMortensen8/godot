@@ -1,10 +1,8 @@
+[gd_scene load_steps=14 format=3 uid="uid://b3cpa348vp47a"]
 
-[gd_scene load_steps=6 format=3 uid="uid://b3cpa348vp47a"]
-
-[ext_resource type="PackedScene" uid="uid://dk3v5f0yfewnp" path="res://enemy.tscn" id="1_ty7fm"]
-[ext_resource type="PackedScene" uid="uid://dxrntpqii3377" path="res://player.tscn" id="2_2vay2"]
-
-
+[ext_resource type="Texture2D" uid="uid://b27hu2dipinx6" path="res://addons/kenney_prototype_textures/orange/texture_04.png" id="1_t3dlq"]
+[ext_resource type="PackedScene" uid="uid://dxrntpqii3377" path="res://player.tscn" id="2_cfla4"]
+[ext_resource type="PackedScene" uid="uid://dk3v5f0yfewnp" path="res://enemy.tscn" id="3_q25if"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_45er5"]
 sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
@@ -95,10 +93,8 @@ material = SubResource("StandardMaterial3D_gbums")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.63695, -0.216266, 10.6155)
 polygon = PackedVector2Array(0, 0, 0.0271966, 0.989381, 1.35928, 0.934066, 2.73376, 0.0221764)
 
+[node name="enemy" parent="." instance=ExtResource("3_q25if")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 1.03598, 3)
 
-[node name="enemy" parent="." instance=ExtResource("1_ty7fm")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.2396, 0.981742, 18.9865)
-
-[node name="node" parent="." instance=ExtResource("2_2vay2")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.39328, 0.95064, 14.7291)
-
+[node name="node" parent="." instance=ExtResource("2_cfla4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8, 0, 0)

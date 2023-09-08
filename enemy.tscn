@@ -1,8 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://dk3v5f0yfewnp"]
 
-
-[ext_resource type="Script" path="res://enemy.cs" id="1_n2xgb"]
-
+[ext_resource type="Script" path="res://enemy.gd" id="1_warj7"]
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_jwc3o"]
 
@@ -14,11 +12,8 @@ albedo_color = Color(0.690196, 0.0823529, 0, 1)
 [node name="enemy" type="Node3D" groups=["enemy"]]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.03598, 0)
 
-
-[node name="CharacterBody3D" type="CharacterBody3D" parent="."]
-")
-=======
-
+[node name="enemy" type="CharacterBody3D" parent="."]
+script = ExtResource("1_warj7")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="enemy"]
 mesh = SubResource("CapsuleMesh_jwc3o")

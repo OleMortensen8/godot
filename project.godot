@@ -43,14 +43,6 @@ enabled=PackedStringArray()
 
 import/blender/enabled=false
 
-[dotnet]
-
-project/assembly_name="Godot"
-
-[editor_plugins]
-
-enabled=PackedStringArray()
-
 [input]
 
 Move_left={

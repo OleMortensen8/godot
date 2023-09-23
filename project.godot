@@ -32,6 +32,10 @@ import/blender/enabled=false
 import/fbx/enabled=false
 project/assembly_name="Godot"
 
+[autoload]
+
+player_path="*res://player.tscn"
+
 [input]
 
 left={

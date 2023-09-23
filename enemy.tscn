@@ -1,26 +1,24 @@
 [gd_scene load_steps=5 format=3 uid="uid://dk3v5f0yfewnp"]
 
-[ext_resource type="Script" path="res://enemy.gd" id="1_warj7"]
+[ext_resource type="Script" path="res://enemy.gd" id="1_bjvx7"]
 
-[sub_resource type="CapsuleMesh" id="CapsuleMesh_jwc3o"]
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_5e2pc"]
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_titrm"]
-albedo_color = Color(0.690196, 0.0823529, 0, 1)
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_q11ls"]
+albedo_color = Color(0.615686, 0.0352941, 0.0862745, 1)
 
-[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_b0ojr"]
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_y0jf2"]
+material = SubResource("StandardMaterial3D_q11ls")
 
-[node name="enemy" type="Node3D" groups=["enemy"]]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.03598, 0)
+[node name="enemy" type="CharacterBody3D" groups=["enemy"]]
+wall_min_slide_angle = 1.0472
+script = ExtResource("1_bjvx7")
 
-[node name="enemy" type="CharacterBody3D" parent="."]
-script = ExtResource("1_warj7")
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("CapsuleShape3D_5e2pc")
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="enemy"]
-mesh = SubResource("CapsuleMesh_jwc3o")
-surface_material_override/0 = SubResource("StandardMaterial3D_titrm")
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = SubResource("CapsuleMesh_y0jf2")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="enemy"]
-shape = SubResource("CapsuleShape3D_b0ojr")
-
-[node name="NavigationAgent3D" type="NavigationAgent3D" parent="enemy"]
-path_desired_distance = 2.9
+[node name="NavigationAgent3D" type="NavigationAgent3D" parent="."]
+path_height_offset = 0.5

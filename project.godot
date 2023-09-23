@@ -35,6 +35,10 @@ enabled=PackedStringArray("res://addons/Mirror/plugin.cfg", "res://addons/charac
 import/blender/enabled=false
 import/fbx/enabled=false
 
+[autoload]
+
+player_path="*res://player.tscn"
+
 [input]
 
 Move_left={

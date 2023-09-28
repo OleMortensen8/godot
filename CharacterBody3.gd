@@ -1,7 +1,6 @@
 extends CharacterBody3D
 
-
-const SPEED = 5.0
+const SPEED = 5
 const JUMP_VELOCITY = 4.5
 
 var look_sensitivity = 0.01
@@ -35,10 +34,8 @@ func _physics_process(delta):
 	move_and_slide()
 	if Input.is_action_just_pressed("ui_cancel"):
 		Input.mouse_mode = Input.MOUSE_MODE_CAPTURED if Input.mouse_mode == Input.MOUSE_MODE_VISIBLE else Input.MOUSE_MODE_VISIBLE
+
 	
-
-
-
 func _input(event):
 	if event is InputEventMouseMotion:
 		rotate_y(-event.relative.x * look_sensitivity)

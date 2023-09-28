@@ -41,9 +41,6 @@ normal_texture = ExtResource("3_j3ugu")
 
 script = ExtResource("1_m2o23")
 
-[node name="player" parent="." instance=ExtResource("3_inyqs")]
-transform = Transform3D(0.999048, 0, -0.0436194, 0, 1, 0, 0.0436194, 0, 0.999048, 3, -0.08, 0)
-
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_jaxrf")
 
@@ -72,10 +69,8 @@ surface_material_override/0 = SubResource("StandardMaterial3D_0dsmi")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/Node3D/MeshInstance3D/StaticBody3D"]
 shape = SubResource("ConcavePolygonShape3D_0os11")
 
-[node name="MeshInstance3D" type="MeshInstance3D" parent="NavigationRegion3D"]
+[node name="StaticBody3D" type="StaticBody3D" parent="NavigationRegion3D"]
 transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 0, 0, 0)
-mesh = SubResource("PlaneMesh_dplmr")
-skeleton = NodePath("../..")
 
 [node name="CSGBox3D" type="CSGBox3D" parent="NavigationRegion3D/CSGCombiner3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.333, 5.271, -2.492)

@@ -1,30 +1,20 @@
-[gd_scene load_steps=6 format=3 uid="uid://dxrntpqii3377"]
+[gd_scene load_steps=4 format=3 uid="uid://dxrntpqii3377"]
 
 [ext_resource type="Script" path="res://CharacterBody3.gd" id="1_cpwot"]
 
-[sub_resource type="CapsuleMesh" id="CapsuleMesh_7cpa7"]
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_l68bj"]
 
-[sub_resource type="Skin" id="Skin_y8t5f"]
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_2ftk1"]
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_2i2um"]
-
-[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_5yked"]
-
-[node name="player" type="Node3D"]
-
-[node name="player" type="CharacterBody3D" parent="." groups=["player"]]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.09166, 0)
-safe_margin = 0.586
+[node name="CharacterBody3D" type="CharacterBody3D"]
 script = ExtResource("1_cpwot")
 
-[node name="player" type="MeshInstance3D" parent="player"]
-ignore_occlusion_culling = true
-mesh = SubResource("CapsuleMesh_7cpa7")
-skin = SubResource("Skin_y8t5f")
-surface_material_override/0 = SubResource("StandardMaterial3D_2i2um")
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = SubResource("CapsuleMesh_l68bj")
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="player"]
-shape = SubResource("CapsuleShape3D_5yked")
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("CapsuleShape3D_2ftk1")
 
-[node name="Camera3D" type="Camera3D" parent="player"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.292533, 0)
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00495134, 0.416278, 0.0920002)
+fov = 70.0

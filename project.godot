@@ -26,6 +26,7 @@ run/main_scene="res://game.tscn"
 =======
 config/features=PackedStringArray("4.2", "Forward Plus")
 config/icon="res://icon.svg"
+boot_splash/minimum_display_time=1
 
 [input]
 

@@ -3,8 +3,8 @@
 [gd_scene load_steps=13 format=3 uid="uid://05sperpcw3oe"]
 [gd_scene load_steps=14 format=3 uid="uid://b3cpa348vp47a"]
 
-[ext_resource type="PackedScene" uid="uid://dk3v5f0yfewnp" path="res://enemy.tscn" id="3_ccfub"]
-[ext_resource type="PackedScene" uid="uid://dxrntpqii3377" path="res://player.tscn" id="3_inyqs"]
+[ext_resource type="PackedScene" uid="uid://dk3v5f0yfewnp" path="res://scenes/enemy.tscn" id="3_ccfub"]
+[ext_resource type="PackedScene" uid="uid://dxrntpqii3377" path="res://scenes/player.tscn" id="3_inyqs"]
 
 [ext_resource type="Script" path="res://game.gd" id="1_m2o23"]
 

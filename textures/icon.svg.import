@@ -1,8 +1,8 @@
 [remap]
 
 importer="texture"
+type="CompressedTexture2D"
 uid="uid://raacwmipabuq"
-
 path="res://.godot/imported/icon.svg-3540dd99eafb6c4e602e8c59cee418fa.ctex"
 metadata={
 "vram_texture": false

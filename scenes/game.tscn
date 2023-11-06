@@ -1,9 +1,7 @@
 [gd_scene load_steps=10 format=3 uid="uid://b3cpa348vp47a"]
 
-
-[ext_resource type="PackedScene" uid="uid://dk3v5f0yfewnp" path="res://enemy.tscn" id="3_ccfub"]
-[ext_resource type="PackedScene" uid="uid://dxrntpqii3377" path="res://player.tscn" id="3_inyqs"]
-
+[ext_resource type="PackedScene" uid="uid://dk3v5f0yfewnp" path="res://scenes/enemy.tscn" id="3_ccfub"]
+[ext_resource type="PackedScene" uid="uid://dxrntpqii3377" path="res://scenes/player.tscn" id="3_inyqs"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_45er5"]
 sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
@@ -62,4 +60,3 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
 [node name="enemy" parent="." node_paths=PackedStringArray("movement_taget") instance=ExtResource("3_ccfub")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 1, 0)
 movement_taget = NodePath("../player")
-

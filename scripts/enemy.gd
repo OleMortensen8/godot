@@ -1,41 +1,48 @@
 extends CharacterBody3D
 
-@export var movement_speed: float = 4.0
-# adds the target location 
-@export var movement_taget: CharacterBody3D
-@onready var navigation_agent = $NavigationAgent3D
+# Export a NodePath for setting the target position from the editor
+@export var targetPositionNodePath: NodePath
+# Export movement speed
+@export var movementSpeed: float = 2.0
 
+# Store the target position
+var movement_target_position: Vector3
 
+@onready var navigation_agent: NavigationAgent3D = $NavigationAgent3D
 
-#calls a new function called actor_setup 
-func _physics_process(_delta):
-	call_deferred("actor_setup")
-	
-	
+func _ready():
+	# These values need to be adjusted for the actor's speed
+	# and the navigation layout.
+	navigation_agent.path_desired_distance = 0.5
+	navigation_agent.target_desired_distance = 0.5
+
+	# Make sure to not await during _ready.
+	actor_setup()
+
 func actor_setup():
-	await get_tree().physics_frame
-	set_movement_target(movement_taget.position)
+	# Set the movement target from the exported NodePath
+	if targetPositionNodePath:
+		var targetNode = get_node_or_null(targetPositionNodePath)
+		if targetNode:
+			movement_target_position = targetNode.global_transform.origin
 
-func set_movement_target(target_point: Vector3):
-	navigation_agent.target_position = target_point
-	navigation_agent.path_desired_distance = 50
-	navigation_agent.target_desired_distance = 10
-	
+func set_movement_target(movement_target: Vector3):
+	navigation_agent.set_target_position(movement_target)
+
+func _physics_process(delta):
+	# Continuously update the movement target
+	if targetPositionNodePath:
+		var targetNode = get_node_or_null(targetPositionNodePath)
+		if targetNode:
+			movement_target_position = targetNode.global_transform.origin
+			set_movement_target(movement_target_position)
+
+	if navigation_agent.is_navigation_finished():
+		return
+
 	var current_agent_position: Vector3 = global_position
 	var next_path_position: Vector3 = navigation_agent.get_next_path_position()
 
-	var  new_velocity: Vector3 = next_path_position - current_agent_position
-	new_velocity = new_velocity.normalized()
-	new_velocity = new_velocity * movement_speed
-	
-	velocity = new_velocity 
-	move_and_slide()
-
-
-func _on_navigation_agent_3d_navigation_finished():
-	if navigation_agent.is_navigation_finished():
-				return 
-
-
-func _on_navigation_agent_3d_path_changed():
-	return
+	var direction: Vector3 = current_agent_position.direction_to(next_path_position)
+	velocity = direction.normalized() * movementSpeed
+	global_translate(velocity * delta) # Move the character manually

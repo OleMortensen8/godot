@@ -18,51 +18,19 @@ boot_splash/image="res://textures/button-alternative-dark.png"
 config/icon="res://icon.svg"
 config/windows_native_icon="res://Nyt Projekt.svg"
 
-[display]
-
-window/size/mode=3
-
-[filesystem]
-
-project/assembly_name="Godot"
-
-[filesystem]
-
-import/blender/enabled=false
-import/fbx/enabled=false
-project/assembly_name="Godot"
-
-[filesystem]
-
-import/blender/enabled=false
-import/fbx/enabled=false
-project/assembly_name="Godot"
-
-[autoload]
-
-player_path="*res://player.tscn"
-
-[autoload]
-
-CyclopsAutoload="*res://addons/cyclops_level_builder/cyclops_global_scene.tscn"
-
 [dotnet]
 
 project/assembly_name="Godot"
 
 [editor_plugins]
 
-enabled=PackedStringArray("res://addons/cyclops_level_builder/plugin.cfg")
+enabled=PackedStringArray("res://addons/godotvmf/plugin.cfg", "res://addons/nv.file_system/plugin.cfg")
 
-[autoload]
+[filesystem]
 
-CyclopsAutoload="*res://addons/cyclops_level_builder/cyclops_global_scene.tscn"
-
-[dotnet]
-
-[editor_plugins]
-
-enabled=PackedStringArray("res://addons/cyclops_level_builder/plugin.cfg")
+import/blender/enabled=false
+import/fbx/enabled=false
+project/assembly_name="Godot"
 
 [input]
 

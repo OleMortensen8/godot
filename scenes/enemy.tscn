@@ -12,16 +12,21 @@ material = SubResource("StandardMaterial3D_q11ls")
 
 [node name="enemy" type="CharacterBody3D" groups=["enemy"]]
 wall_min_slide_angle = 1.0472
+floor_stop_on_slope = false
+safe_margin = 1.0
 script = ExtResource("1_bjvx7")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.319316, 0)
 shape = SubResource("CapsuleShape3D_5e2pc")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.330917, 0)
 mesh = SubResource("CapsuleMesh_y0jf2")
 
 [node name="NavigationAgent3D" type="NavigationAgent3D" parent="."]
 path_height_offset = 0.5
+debug_enabled = true
 
 [connection signal="navigation_finished" from="NavigationAgent3D" to="." method="_on_navigation_agent_3d_navigation_finished"]
 [connection signal="path_changed" from="NavigationAgent3D" to="." method="_on_navigation_agent_3d_path_changed"]

@@ -22,7 +22,7 @@ config/windows_native_icon="res://Nyt Projekt.svg"
 
 window/size/mode=3
 
-[filesystem]
+[dotnet]
 
 project/assembly_name="Godot"
 
@@ -49,20 +49,6 @@ CyclopsAutoload="*res://addons/cyclops_level_builder/cyclops_global_scene.tscn"
 [dotnet]
 
 project/assembly_name="Godot"
-
-[editor_plugins]
-
-enabled=PackedStringArray("res://addons/cyclops_level_builder/plugin.cfg")
-
-[autoload]
-
-CyclopsAutoload="*res://addons/cyclops_level_builder/cyclops_global_scene.tscn"
-
-[dotnet]
-
-[editor_plugins]
-
-enabled=PackedStringArray("res://addons/cyclops_level_builder/plugin.cfg")
 
 [input]
 

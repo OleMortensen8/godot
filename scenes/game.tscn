@@ -91,6 +91,7 @@ navigation_mesh = SubResource("NavigationMesh_hl451")
 travel_cost = 5.0
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="NavigationRegion3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0674117, -0.0376003, 0.0501774)
 mesh = SubResource("PlaneMesh_ixtgk")
 skin = SubResource("Skin_6lise")
 
